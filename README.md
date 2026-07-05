@@ -6,7 +6,7 @@ A real-time pathfinding engine built in C++ using a customized A* algorithm, mod
 
 ## Features
 
-- **A* Pathfinding** with a Haversine great-circle distance heuristic — admissible by construction since road distances always exceed straight-line surface distance
+- 'A\*' **Pathfinding** with a Haversine great-circle distance heuristic — admissible by construction since road distances always exceed straight-line surface distance
 - **Dual weight modes** — switch between minimizing kilometers or minimizing travel time at query time, without changing the underlying graph
 - **HashMap route cache** — `unordered_map` keyed on `(src, dst, mode)` triples; repeat queries resolve in <1µs vs ~15µs for a cold A* run
 - **Targeted cache invalidation** — evicts only routes touching an updated node, leaving unaffected cached routes intact
