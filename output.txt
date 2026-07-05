@@ -1,0 +1,52 @@
+=== NYC City Navigation System ===
+Graph: 28 nodes, A* with Haversine heuristic
+
+── Battery Park → JFK  [Shortest km] ──
+  Battery Park → JFK Airport
+  Path:  Battery Park → Wall Street → Brooklyn Bridge → DUMBO → Atlantic Terminal → JFK Airport
+  Cost:  21.80 km
+  Time (cold):   15 µs
+  Time (cached): 1 µs  (cache entries: 1)
+
+── Battery Park → JFK  [Fastest time] ──
+  Battery Park → JFK Airport
+  Path:  Battery Park → Wall Street → Brooklyn Bridge → DUMBO → Atlantic Terminal → JFK Airport
+  Cost:  28.8 min
+  Time (cold):   3 µs
+  Time (cached): 0 µs  (cache entries: 2)
+
+── Coney Island → Washington Heights [Distance] ──
+  Coney Island → Washington Heights
+  Path:  Coney Island → Prospect Park → Atlantic Terminal → DUMBO → Long Island City → Grand Central → Rockefeller Center → Columbus Circle → Lincoln Center → American Museum → Central Park North → Harlem - 125th St → Washington Heights
+  Cost:  32.90 km
+  Time (cold):   7 µs
+  Time (cached): 0 µs  (cache entries: 3)
+
+── Coney Island → Washington Heights [Time] ──
+  Coney Island → Washington Heights
+  Path:  Coney Island → Prospect Park → Atlantic Terminal → DUMBO → Long Island City → Grand Central → Lincoln Center → American Museum → Central Park North → Harlem - 125th St → Washington Heights
+  Cost:  50.1 min
+  Time (cold):   4 µs
+  Time (cached): 0 µs  (cache entries: 4)
+
+── Times Square → Fordham [Time] ──
+  Times Square → Fordham
+  Path:  Times Square → Rockefeller Center → Columbus Circle → Lincoln Center → American Museum → Central Park North → Harlem - 125th St → Yankee Stadium → Fordham
+  Cost:  22.4 min
+  Time (cold):   4 µs
+  Time (cached): 0 µs  (cache entries: 5)
+
+── Penn Station → Flushing [Distance] ──
+  Penn Station → Flushing
+  Path:  Penn Station → Times Square → Grand Central → Long Island City → Jackson Heights → Flushing
+  Cost:  17.20 km
+  Time (cold):   4 µs
+  Time (cached): 0 µs  (cache entries: 6)
+
+── Simulating traffic incident at Times Square ──
+  Cache entries before: 6
+  Cache entries after:  5  (routes through Times Square evicted)
+
+  Re-routing Penn Station → Flushing after incident:
+    Path:  Penn Station → Times Square → Grand Central → Long Island City → Jackson Heights → Flushing
+  Cost:  25.4 min
